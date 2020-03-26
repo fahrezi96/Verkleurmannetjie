@@ -1,19 +1,58 @@
-@import "./override";
-@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+$navy: #001f3f;
+$blue: #0074D9;
+$aqua: #7FDBFF;
+$teal: #39CCCC;
+$olive: #3D9970;
+$green: #2ECC40;
+$lime: #01FF70;
+$yellow: #FFDC00;
+$orange: #FF851B;
+$red: #FF4136;
+$maroon: #85144b;
+$fuchsia: #F012BE;
+$purple: #B10DC9;
+$black: #111111;
+$gray: #AAAAAA;
+$silver: #DDDDDD;
+$white: #FFFFFF;
 
+$custom-color: $black;
+$sidenav-width: 260px;
+
+
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import "./override";
+
+
+.app-container {
+    display: flex;
+}
 
 aside {
-    background-color: lightgray;
-    width: 280px;
+    background-color: rgba($color: $custom-color, $alpha: 0.9);
+    color: $silver;
+    width: $sidenav-width;
+    min-height: 100vh;
+    padding-bottom: 20px;
+    transition: width 0.3s;
+
+    &.sidenav-hide {
+        width: 0;
+        overflow: hidden;
+    }
 }
 
 .app-title {
-    padding: 5px 15px;
-    background-color: black;
+    background-color: $custom-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    width: $sidenav-width;
 
     h1 a {
         font-family: 'Lobster', cursive;
-        color: white;
+        color: $white;
         font-size: 28px;
 
         &:hover {
@@ -25,9 +64,11 @@ aside {
 .user-panel {
     display: flex;
     padding: 15px;
+    width: $sidenav-width;
 
     .user-avatar img {
         border-radius: 50%;
+        border: solid 1px $custom-color;
         width: 50px; height: 50px;
     }
 
@@ -44,7 +85,103 @@ aside {
     }
 
     .user-status {
-        color: gray;
+        color: $gray;
         font-size: 12px;
+    }
+}
+
+.search-bar {
+    padding: 5px 15px 1px;
+    width: $sidenav-width;
+
+    #search-input {
+        background-image: url(../img/search.png);
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position: 98% center;
+    }
+}
+
+.sidenav {
+    font-size: 14px;
+    width: $sidenav-width;
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding-left: 30px;
+    }
+
+    & > ul {
+        padding-left: 0;
+
+        & > li > a {
+            background-color: rgba($color: $custom-color, $alpha: 0.4);
+        }
+    } 
+
+    ul.treeview-menu {
+        height: 0;
+        overflow: hidden;
+
+        ul.treeview-menu {
+            padding-left: 15px;
+        }
+
+        & > li > a {
+            padding: 5px 15px 5px 0;
+            &:hover {
+                color: rgba($color: $silver, $alpha: 0.6);
+                background-color: transparent;
+            }
+        }
+
+        &.treeview-menu-show {
+            height: 100%;
+            overflow: initial;
+        }
+    }
+
+    li {
+        a {
+            padding: 5px 15px;
+            color: $silver;
+            display: inline-block;
+            width: 100%;
+            text-decoration: none;
+            transition: all 0.3s;
+
+            &:hover {
+                background-color: rgba($color: $custom-color, $alpha: 0.7);
+            }
+        }
+    }
+
+    li.nav-header {
+        background-color: rgba($color: $custom-color, $alpha: 0.7);
+        color: $gray;
+        padding: 5px 15px;
+    }
+}
+
+main {
+    flex-grow: 1;
+    min-height: 100vh;
+    background-color: $silver;
+}
+
+header {
+    background-color: $custom-color;
+    height: 55px;
+
+    #sidebar-toogle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 50px;
+        font-size: 20px;
+        text-decoration: none;
+        color: $silver;
     }
 }

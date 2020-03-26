@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>App Title</title>
     <link rel="stylesheet" href="./assets/lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -25,12 +26,80 @@
                     <p class="user-status">Online</p>
                 </div>
             </div>
-            <nav class="sidenav"></nav>
+            <div class="search-bar">
+                <div class="form-group">
+                    <input id="search-input" type="text" class="form-control form-control-sm" placeholder="Search...">
+                </div>
+            </div>
+            <nav class="sidenav">
+                <ul>
+                    <li class="nav-header">Navigation Header</li>
+                    <li class="treeview">
+                        <a href="javascript:;">
+                            <i class="fa fa-navicon"></i>
+                            Menu
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="javascript:;"><i class="fa fa-navicon"></i> Menu level 2</a></li>
+                            <li><a href="javascript:;"><i class="fa fa-navicon"></i> Menu level 2</a></li>
+                        </ul class="treeview-menu">
+                    </li>
+                    <li><a href="javascript:;"><i class="fa fa-navicon"></i> Menu</a></li>
+                    <li class="treeview">
+                        <a href="javascript:;">
+                            <i class="fa fa-navicon"></i>
+                            Menu
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="javascript:;"><i class="fa fa-navicon"></i> Menu level 2</a></li>
+                            <li><a href="javascript:;"><i class="fa fa-navicon"></i> Menu level 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-header">Another Navigation Header</li>
+                    <li class="treeview">
+                        <a href="javascript:;">
+                            <i class="fa fa-navicon"></i>
+                            Menu
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="javascript:;"><i class="fa fa-navicon"></i> Menu level 2</a></li>
+                            <li><a href="javascript:;"><i class="fa fa-navicon"></i> Menu level 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;"><i class="fa fa-navicon"></i> Menu</a></li>
+                    <li class="treeview">
+                        <a href="javascript:;">
+                            <i class="fa fa-navicon"></i>
+                            Menu
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="treeview-menu treeview-menu-show">
+                            <li><a href="javascript:;"><i class="fa fa-navicon"></i> Menu level 2</a></li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="fa fa-navicon"></i>
+                                    Menu level 2
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                                <ul class="treeview-menu treeview-menu-show">
+                                    <li><a href="javascript:;"><i class="fa fa-navicon"></i> Menu level 3</a></li>
+                                    <li><a href="javascript:;"><i class="fa fa-navicon"></i> Menu level 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </aside>
         <main>
             <header>
-                <div class="left-section"></div>
-                <div class="right-section"></div>
+                <a href="javascript:;" id="sidebar-toogle">
+                    <i class="fa fa-navicon"></i>
+                </a>
             </header>
             <div class="main-container">
                 <div class="main-header"></div>
@@ -43,6 +112,7 @@
     <script src="./assets/lib/jquery/jquery.js"></script>
     <!-- <script src="./assets/lib/popper/popper.min.js"></script> -->
     <script src="./assets/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="./assets/js/script.js" defer></script>
 </body>
 
 </html>

@@ -1,0 +1,13 @@
+.form-control, .form-control-sm {
+    border-color: $custom-color;
+    border-radius: 0;
+
+    &:focus {
+        border-color: rgba($color: $custom-color, $alpha: 0.5);
+        box-shadow: 0 0 0 0.2rem rgba($color: $custom-color, $alpha: 0.25);
+    }
+}
+
+.fa-angle-down {
+    float: right;
+}
