@@ -9,6 +9,50 @@
 .fa-angle-down {
   float: right; }
 
+.dropdown-menu {
+  border-radius: 0;
+  font-size: 14px;
+  width: 250px; }
+  .dropdown-menu .progress {
+    border-radius: 0;
+    height: 8px; }
+  .dropdown-menu .header {
+    padding: 5px 10px;
+    border-bottom: solid 1px #DDDDDD; }
+  .dropdown-menu .body {
+    max-height: 200px;
+    overflow-y: auto; }
+  .dropdown-menu .footer {
+    text-align: center;
+    padding: 5px 10px; }
+  .dropdown-menu ul.menu {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none; }
+    .dropdown-menu ul.menu a {
+      display: inline-block;
+      padding: 5px 10px;
+      transition: all 0.2s;
+      width: 100%;
+      border-bottom: solid 1px #DDDDDD; }
+      .dropdown-menu ul.menu a:hover {
+        background-color: rgba(221, 221, 221, 0.3); }
+    .dropdown-menu ul.menu h6 {
+      font-size: 13px; }
+
+body {
+  color: #111111; }
+
+a {
+  color: #111111;
+  text-decoration: none; }
+  a:hover {
+    color: #111111;
+    text-decoration: none; }
+
+.bg-theme {
+  background-color: #111111; }
+
 .app-container {
   display: flex; }
 
@@ -110,15 +154,56 @@ main {
 
 header {
   background-color: #111111;
-  height: 55px; }
-  header #sidebar-toogle {
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  header .dropdown > a, header #sidebar-toogle {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 50px;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
-    color: #DDDDDD; }
+    color: #DDDDDD;
+    transition: all 0.2s; }
+    header .dropdown > a:hover, header #sidebar-toogle:hover {
+      background-color: #AAAAAA;
+      color: #111111; }
+    header .dropdown > a:hover .label, header #sidebar-toogle:hover .label {
+      color: #DDDDDD; }
+  header span.label {
+    display: inline-block;
+    background-color: #AAAAAA;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    font-size: 10px;
+    text-align: center;
+    line-height: 15px;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    border: solid 1px #FFFFFF; }
+  header span.label-danger {
+    background-color: #FF4136; }
+  header span.label-warning {
+    background-color: #FF851B; }
+  header span.label-success {
+    background-color: #2ECC40; }
+  header .headnav {
+    height: 100%;
+    display: flex; }
+    header .headnav .dropdown {
+      height: 100%; }
+  header .dropdown-toggle::after {
+    display: none; }
+  header .dropdown-menu.show {
+    left: auto !important;
+    right: 0 !important;
+    top: 52px !important;
+    transform: none !important;
+    padding: 0; }
 
 /*# sourceMappingURL=style.css.map */

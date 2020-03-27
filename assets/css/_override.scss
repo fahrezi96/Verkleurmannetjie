@@ -11,3 +11,51 @@
 .fa-angle-down {
     float: right;
 }
+
+.dropdown-menu {
+    border-radius: 0;
+    font-size: 14px;
+    width: 250px;
+
+    .progress {
+        border-radius: 0;
+        height: 8px;
+    }
+
+    .header {
+        padding: 5px 10px;
+        border-bottom: solid 1px $silver;
+    }
+
+    .body {
+        max-height: 200px;
+        overflow-y: auto;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 5px 10px;
+    }
+
+    ul.menu {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style-type: none;
+
+        a {
+            display: inline-block;
+            padding: 5px 10px;
+            transition: all 0.2s;
+            width: 100%;
+            border-bottom: solid 1px $silver;
+
+            &:hover {
+                background-color: rgba($color: $silver, $alpha: 0.3);
+            }
+        }
+
+        h6 {
+            font-size: 13px;
+        }
+    }
+}
