@@ -12,10 +12,19 @@
     float: right;
 }
 
+.btn {
+    border-radius: 0;
+}
+
+.card {
+    border-radius: 0;
+    margin-bottom: 15px;
+}
+
 .dropdown-menu {
     border-radius: 0;
     font-size: 14px;
-    width: 250px;
+    width: 300px;
 
     .progress {
         border-radius: 0;
@@ -51,6 +60,23 @@
 
             &:hover {
                 background-color: rgba($color: $silver, $alpha: 0.3);
+            }
+
+            p {
+                font-size: 11px;
+                margin-bottom: 0;
+                color: $gray;
+            }
+
+            img {
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                margin-right: 10px;
+            }
+
+            .common-wrapper {
+                flex-grow: 1;
             }
         }
 

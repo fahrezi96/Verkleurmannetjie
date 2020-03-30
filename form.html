@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>App Title</title>
+    <!-- <link rel="stylesheet" href="./assets/lib/bootstrap/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <aside>
+            <div class="app-title">
+                <h1><a href="javascript:;">App Title</a></h1>
+            </div>
+            <div class="user-panel">
+                <div class="user-avatar">
+                    <img src="./assets/img/ava.jpg" alt="user-image">
+                </div>
+                <div class="user-info">
+                    <p class="user-name">Jane Doe</p>
+                    <p class="user-status">Online</p>
+                </div>
+            </div>
+            <div class="search-bar">
+                <div class="form-group">
+                    <input id="search-input" type="text" class="form-control form-control-sm" placeholder="Search...">
+                </div>
+            </div>
+            <nav class="sidenav">
+                <ul>
+                    <li class="nav-header">Navigation Header</li>
+                    <li class="treeview">
+                        <a href="javascript:;">
+                            <i class="fa fa-navicon"></i>
+                            Menu
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="javascript:;"><i class="fa fa-navicon"></i> Menu level 2</a></li>
+                            <li><a href="javascript:;"><i class="fa fa-navicon"></i> Menu level 2</a></li>
+                        </ul class="treeview-menu">
+                    </li>
+                    <li><a href="./form.html"><i class="fa fa-navicon"></i> Form</a></li>
+                    <li class="treeview">
+                        <a href="javascript:;">
+                            <i class="fa fa-navicon"></i>
+                            Menu
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="javascript:;"><i class="fa fa-navicon"></i> Menu level 2</a></li>
+                            <li><a href="javascript:;"><i class="fa fa-navicon"></i> Menu level 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-header">Another Navigation Header</li>
+                    <li class="treeview">
+                        <a href="javascript:;">
+                            <i class="fa fa-navicon"></i>
+                            Menu
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="javascript:;"><i class="fa fa-navicon"></i> Menu level 2</a></li>
+                            <li><a href="javascript:;"><i class="fa fa-navicon"></i> Menu level 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:;"><i class="fa fa-navicon"></i> Menu</a></li>
+                    <li class="treeview">
+                        <a href="javascript:;">
+                            <i class="fa fa-navicon"></i>
+                            Menu
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="treeview-menu treeview-menu-show">
+                            <li><a href="javascript:;"><i class="fa fa-navicon"></i> Menu level 2</a></li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="fa fa-navicon"></i>
+                                    Menu level 2
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                                <ul class="treeview-menu treeview-menu-show">
+                                    <li><a href="javascript:;"><i class="fa fa-navicon"></i> Menu level 3</a></li>
+                                    <li><a href="javascript:;"><i class="fa fa-navicon"></i> Menu level 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <header>
+                <a href="javascript:;" id="sidebar-toogle">
+                    <i class="fa fa-navicon"></i>
+                </a>
+                <div class="headnav">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" href="javascript:;" id="message" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="label label-success">4</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="message">
+                            <div class="header">You have <span>4</span> messages</div>
+                            <div class="body">
+                                <ul class="menu">
+                                    <li>
+                                        <a href="javascript:;">
+                                            <div class="d-flex align-items-center">
+                                                <img src="./assets/img/ava.jpg" alt="">
+
+                                                <div class="common-wrapper">
+                                                    <h6>UI/UX Team <small class="pull-right">5 min</small></h6>
+                                                    <p>Why not buy a new awesome theme?</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <div class="d-flex align-items-center">
+                                                <img src="./assets/img/ava.jpg" alt="">
+
+                                                <div class="common-wrapper">
+                                                    <h6>UI/UX Team <small class="pull-right">5 min</small></h6>
+                                                    <p>Why not buy a new awesome theme?</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <div class="d-flex align-items-center">
+                                                <img src="./assets/img/ava.jpg" alt="">
+
+                                                <div class="common-wrapper">
+                                                    <h6>UI/UX Team <small class="pull-right">5 min</small></h6>
+                                                    <p>Why not buy a new awesome theme?</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <div class="d-flex align-items-center">
+                                                <img src="./assets/img/ava.jpg" alt="">
+
+                                                <div class="common-wrapper">
+                                                    <h6>UI/UX Team <small class="pull-right">5 min</small></h6>
+                                                    <p>Why not buy a new awesome theme?</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer">
+                                <a href="javascript:;">View all</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" href="javascript:;" id="notification" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-bell-o"></i>
+                            <span class="label label-warning">5</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="notification">
+                            <div class="header">You have <span>5</span> notifications</div>
+                            <div class="body">
+                                <ul class="menu">
+                                    <li>
+                                        <a href="javascript:;">
+                                            <i class="fa fa-users"></i>
+                                            5 new members joined today
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <i class="fa fa-users"></i>
+                                            5 new members joined today
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <i class="fa fa-users"></i>
+                                            5 new members joined today
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer">
+                                <a href="javascript:;">View all</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" href="javascript:;" id="task" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-flag-o"></i>
+                            <span class="label label-danger">6</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="task">
+                            <div class="header">You have <span>6</span> Task</div>
+                            <div class="body">
+                                <ul class="menu">
+                                    <li>
+                                        <a href="javascript:;">
+                                            <h6>Make calendar widget <small class="pull-right">25%</small></h6>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-theme" role="progressbar" style="width: 25%"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <h6>Make form validation <small class="pull-right">35%</small></h6>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-theme" role="progressbar" style="width: 35%"
+                                                    aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <h6>Make dropdown widget <small class="pull-right">14%</small></h6>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-theme" role="progressbar" style="width: 14%"
+                                                    aria-valuenow="14" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <h6>Make contact form <small class="pull-right">70%</small></h6>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-theme" role="progressbar" style="width: 70%"
+                                                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <h6>Make header <small class="pull-right">67%</small></h6>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-theme" role="progressbar" style="width: 67%"
+                                                    aria-valuenow="67" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <h6>Make grid widget <small class="pull-right">91%</small></h6>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-theme" role="progressbar" style="width: 91%"
+                                                    aria-valuenow="91" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer">
+                                <a href="javascript:;">View all</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" href="javascript:;" id="setting" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-gears"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="setting">
+                            <div class="body">
+                                <ul class="menu">
+                                    <li><a href="javascript:;"><i class="fa fa-user-circle-o"></i> Profile</a></li>
+                                    <li><a href="javascript:;"><i class="fa fa-gear"></i> Setting</a></li>
+                                    <li><a href="javascript:;"><i class="fa fa-sign-out"></i> Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="main-container">
+                <div class="main-header">
+                    <div class="main-title">
+                        <h2>Form</h2>
+                    </div>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:;">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Form</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="main-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Basic Form</h5>
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Email address</label>
+                                                <input type="email" class="form-control form-control-sm"
+                                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                <small id="emailHelp" class="form-text text-muted">We'll never share
+                                                    your email with anyone else.</small>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputPassword1">Password</label>
+                                                <input type="password" class="form-control form-control-sm"
+                                                    id="exampleInputPassword1">
+                                            </div>
+                                            <div class="form-group form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                            </div>
+                                            <button type="submit" class="btn btn-secondary btn-sm">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Horizontal Form</h5>
+                                        <form>
+                                            <div class="form-group row">
+                                                <label for="inputEmail3" class="col-md-4 col-form-label">Email</label>
+                                                <div class="col-md-8">
+                                                    <input type="email" class="form-control form-control-sm"
+                                                        id="inputEmail3">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="inputPassword3"
+                                                    class="col-md-4 col-form-label">Password</label>
+                                                <div class="col-md-8">
+                                                    <input type="password" class="form-control form-control-sm"
+                                                        id="inputPassword3">
+                                                </div>
+                                            </div>
+                                            <fieldset class="form-group">
+                                                <div class="row">
+                                                    <legend class="col-form-label col-md-4 pt-0">Radios</legend>
+                                                    <div class="col-md-8">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="gridRadios" id="gridRadios1" value="option1"
+                                                                checked>
+                                                            <label class="form-check-label" for="gridRadios1">
+                                                                First radio
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="gridRadios" id="gridRadios2" value="option2">
+                                                            <label class="form-check-label" for="gridRadios2">
+                                                                Second radio
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check disabled">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="gridRadios" id="gridRadios3" value="option3"
+                                                                disabled>
+                                                            <label class="form-check-label" for="gridRadios3">
+                                                                Third disabled radio
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                            <div class="form-group row">
+                                                <div class="col-md-4">Checkbox</div>
+                                                <div class="col-md-8">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                                        <label class="form-check-label" for="gridCheck1">
+                                                            Example checkbox
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-md-8">
+                                                    <button type="submit" class="btn btn-secondary btn-sm">Sign
+                                                        in</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer></footer>
+        </main>
+    </div>
+
+    <script src="./assets/lib/jquery/jquery.js"></script>
+    <script src="./assets/lib/popper/popper.min.js"></script>
+    <script src="./assets/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="./assets/js/script.js" defer></script>
+</body>
+
+</html>

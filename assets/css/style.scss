@@ -15,10 +15,11 @@ $black: #111111;
 $gray: #AAAAAA;
 $silver: #DDDDDD;
 $white: #FFFFFF;
-
 $custom-color: $black;
-$sidenav-width: 260px;
 
+@import "./bootstrap/bootstrap.scss";
+
+$sidenav-width: 260px;
 
 @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 @import "./override";
@@ -261,5 +262,27 @@ header {
         top: 52px!important;
         transform: none!important;
         padding: 0;
+    }
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 10px;
+
+    .breadcrumb {
+        background-color: transparent;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        font-size: 12px;
+    }
+}
+
+.main-title {
+    h2 {
+        font-size: 20px;
+        margin-bottom: 0;
+        margin-left: 15px;
     }
 }
