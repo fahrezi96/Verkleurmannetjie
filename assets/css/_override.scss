@@ -21,6 +21,10 @@
     margin-bottom: 15px;
 }
 
+label, legend {
+    font-size: 14px;
+}
+
 .dropdown-menu {
     border-radius: 0;
     font-size: 14px;
@@ -84,4 +88,14 @@
             font-size: 13px;
         }
     }
+}
+
+.table th, .table td {
+    padding: 0.5rem;
+    font-size: 14px;
+}
+
+.alert {
+    padding: 0.5rem 1.25rem;
+    border-radius: 0;
 }

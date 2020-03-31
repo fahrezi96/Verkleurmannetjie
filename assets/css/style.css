@@ -7712,6 +7712,9 @@ a.text-custom:hover, a.text-custom:focus {
   border-radius: 0;
   margin-bottom: 15px; }
 
+label, legend {
+  font-size: 14px; }
+
 .dropdown-menu {
   border-radius: 0;
   font-size: 14px;
@@ -7754,6 +7757,14 @@ a.text-custom:hover, a.text-custom:focus {
     .dropdown-menu ul.menu h6 {
       font-size: 13px; }
 
+.table th, .table td {
+  padding: 0.5rem;
+  font-size: 14px; }
+
+.alert {
+  padding: 0.5rem 1.25rem;
+  border-radius: 0; }
+
 body {
   color: #111111; }
 
@@ -7763,6 +7774,9 @@ a {
   a:hover {
     color: #111111;
     text-decoration: none; }
+
+p {
+  font-size: 14px; }
 
 .bg-theme {
   background-color: #111111; }
@@ -7935,5 +7949,12 @@ header {
   font-size: 20px;
   margin-bottom: 0;
   margin-left: 15px; }
+
+.button-wrapper {
+  display: flex;
+  flex-wrap: wrap; }
+  .button-wrapper .btn {
+    margin-right: 5px;
+    margin-bottom: 5px; }
 
 /*# sourceMappingURL=style.css.map */

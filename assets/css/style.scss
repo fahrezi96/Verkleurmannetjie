@@ -38,6 +38,10 @@ a {
     }
 }
 
+p {
+    font-size: 14px;
+}
+
 .bg-theme {
     background-color: $custom-color;
 }
@@ -284,5 +288,15 @@ header {
         font-size: 20px;
         margin-bottom: 0;
         margin-left: 15px;
+    }
+}
+
+.button-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    .btn {
+        margin-right: 5px;
+        margin-bottom: 5px;
     }
 }
