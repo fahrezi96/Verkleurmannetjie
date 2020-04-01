@@ -7957,4 +7957,47 @@ header {
     margin-right: 5px;
     margin-bottom: 5px; }
 
+.auth-container {
+  display: flex;
+  height: 100vh; }
+
+.auth-bg {
+  background-image: linear-gradient(-50deg, rgba(17, 17, 17, 0.7), transparent), url("../img/naufal-ardi-santoso-DVgIwpGVNJA-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .auth-bg .app-title {
+    background-color: #FFFFFF;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; }
+    .auth-bg .app-title h1 a {
+      color: #111111;
+      cursor: initial; }
+
+.auth-form {
+  padding: 20px;
+  width: 320px; }
+  .auth-form footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 280px; }
+
+@media only screen and (max-width: 768px) {
+  .auth-container {
+    flex-direction: column; }
+
+  .auth-bg {
+    padding: 20px 0; }
+
+  .auth-form {
+    margin: auto; }
+    .auth-form footer {
+      position: static;
+      margin-top: 20px; } }
+
 /*# sourceMappingURL=style.css.map */

@@ -300,3 +300,47 @@ header {
         margin-bottom: 5px;
     }
 }
+
+
+.auth-container {
+    display: flex;
+    height: 100vh;
+}
+
+.auth-bg {
+    background-image: linear-gradient(-50deg, rgba($color: $custom-color, $alpha: 0.7), transparent), url("../img/naufal-ardi-santoso-DVgIwpGVNJA-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .app-title {
+        background-color: $white;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+
+        h1 a {
+            color: $black;
+            cursor: initial;
+        }
+    }
+}
+
+.auth-form {
+    padding: 20px;
+    width: 320px;
+
+    footer {
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        width: 280px;
+    }
+}
+
+
+
+@import "./responsive";

@@ -9,3 +9,9 @@ document.querySelectorAll(".treeview a").forEach((d) => {
 document.getElementById("sidebar-toogle").addEventListener("click", () => {
     document.querySelector("aside").classList.toggle("sidenav-hide");
 });
+
+if (window.innerWidth <= 768) document.querySelector("aside").classList.add("sidenav-hide");
+
+window.addEventListener("resize", () => {
+    if (window.innerWidth <= 768) document.querySelector("aside").classList.add("sidenav-hide");
+});

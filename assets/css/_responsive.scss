@@ -1,0 +1,18 @@
+@media only screen and (max-width: 768px) {
+    .auth-container {
+        flex-direction: column;
+    }
+
+    .auth-bg {
+        padding: 20px 0;
+    }
+
+    .auth-form {
+        margin: auto;
+
+        footer {
+            position: static;
+            margin-top: 20px;
+        }
+    }
+}
