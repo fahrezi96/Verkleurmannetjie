@@ -2,10 +2,10 @@
     border-color: $custom-color;
     border-radius: 0;
 
-    &:focus {
-        border-color: rgba($color: $custom-color, $alpha: 0.5);
-        box-shadow: 0 0 0 0.2rem rgba($color: $custom-color, $alpha: 0.25);
-    }
+    // &:focus {
+    //     border-color: rgba($color: $custom-color, $alpha: 0.5);
+    //     box-shadow: 0 0 0 0.2rem rgba($color: $custom-color, $alpha: 0.25);
+    // }
 }
 
 .fa-angle-down {
@@ -101,5 +101,15 @@ label, legend {
 }
 
 .list-group-item:first-child, .list-group-item:last-child {
+    border-radius: 0;
+}
+
+div.dataTables_wrapper div.dataTables_length select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.page-item:first-child .page-link, .page-item:last-child .page-link {
     border-radius: 0;
 }
