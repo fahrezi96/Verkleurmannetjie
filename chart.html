@@ -294,16 +294,37 @@
             <div class="main-container">
                 <div class="main-header">
                     <div class="main-title">
-                        <h2>Dashboard</h2>
+                        <h2>Chart</h2>
                     </div>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:;">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                            <li class="breadcrumb-item active" aria-current="page">Chart</li>
                         </ol>
                     </nav>
                 </div>
-                <div class="main-body"></div>
+                <div class="main-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Bar Chart</h6>
+                                        <div id="barchart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Line Chart</h6>
+                                        <div id="linechart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <footer></footer>
         </main>
@@ -312,7 +333,10 @@
     <script src="./assets/lib/jquery/jquery.js"></script>
     <script src="./assets/lib/popper/popper.min.js"></script>
     <script src="./assets/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
     <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/barchart.js"></script>
+    <script src="./assets/js/linechart.js"></script>
 </body>
 
 </html>

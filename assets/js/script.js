@@ -6,6 +6,20 @@ document.querySelectorAll(".treeview a").forEach((d) => {
     });
 });
 
+// var accHD = document.querySelectorAll(".treeview a");
+
+// for (i = 0; i < accHD.length; i++) {
+//     accHD[i].addEventListener('click', toggleItem, false);
+// }
+
+// function toggleItem() {
+//     let item = this.nextElementSibling;
+//     for (i = 0; i < item.length; i++) {
+//         item[i].classList.remove("treeview-menu-show");
+//     }
+//     if (item.className === "treeview-menu") item.classList.add("treeview-menu-show");
+// }
+
 document.getElementById("sidebar-toogle").addEventListener("click", () => {
     document.querySelector("aside").classList.toggle("sidenav-hide");
 });

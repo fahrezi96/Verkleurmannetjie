@@ -8006,6 +8006,16 @@ header {
     margin: auto; }
     .auth-form footer {
       position: static;
-      margin-top: 20px; } }
+      margin-top: 20px; }
+
+  .app-container {
+    flex-direction: column; }
+
+  aside, .app-title, .user-panel, .search-bar, .sidenav {
+    width: 100%; }
+
+  aside.sidenav-hide {
+    height: 0;
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

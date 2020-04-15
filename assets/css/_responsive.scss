@@ -15,4 +15,17 @@
             margin-top: 20px;
         }
     }
+
+    .app-container {
+        flex-direction: column;
+    }
+
+    aside, .app-title, .user-panel, .search-bar, .sidenav {
+        width: 100%;
+    }
+
+    aside.sidenav-hide {
+        height: 0;
+        display: none;
+    }
 }
